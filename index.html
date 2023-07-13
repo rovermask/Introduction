@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico" type="image/icon type">
+    <title>Vibhum Sharma - Home</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("LSAPG-VI6Afu5xWGI");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            Introduce Yourself !!!
+        </div>
+        <form action="#">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="fname" required>
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="lname" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" id="email" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" id="insta" required>
+                    <div class="underline"></div>
+                    <label for="">Instagram Handle</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" id="message" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Message for me</label>
+                    <br />
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <input type="button" value="Submit" onclick="sendMail()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
